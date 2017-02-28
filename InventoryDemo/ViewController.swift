@@ -8,18 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        inventory.createNewCategory("Knick knacks")
+        inventory.createNewCategory("Trinkets")
+        categoryPicker.dataSource = self
+        categoryPicker.delegate = self
     }
+    
+    var inventory = Inventory()
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBOutlet weak var categoryPicker: UIPickerView!
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
-
-
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return inventory.categories.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return inventory.categories[row]
+    }
 }
 

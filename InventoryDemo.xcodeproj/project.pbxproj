@@ -13,6 +13,7 @@
 		10D962761E65EC690050497F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D962751E65EC690050497F /* Assets.xcassets */; };
 		10D962791E65EC690050497F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D962771E65EC690050497F /* LaunchScreen.storyboard */; };
 		10D962841E65EC690050497F /* InventoryDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D962831E65EC690050497F /* InventoryDemoTests.swift */; };
+		10D9628F1E65ED4F0050497F /* InventoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D9628E1E65ED4F0050497F /* InventoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		10D9627F1E65EC690050497F /* InventoryDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InventoryDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D962831E65EC690050497F /* InventoryDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDemoTests.swift; sourceTree = "<group>"; };
 		10D962851E65EC690050497F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10D9628E1E65ED4F0050497F /* InventoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				10D9626E1E65EC690050497F /* AppDelegate.swift */,
 				10D962701E65EC690050497F /* ViewController.swift */,
 				10D962721E65EC690050497F /* Main.storyboard */,
+				10D9628E1E65ED4F0050497F /* InventoryModel.swift */,
 				10D962751E65EC690050497F /* Assets.xcassets */,
 				10D962771E65EC690050497F /* LaunchScreen.storyboard */,
 				10D9627A1E65EC690050497F /* Info.plist */,
@@ -203,6 +206,7 @@
 			files = (
 				10D962711E65EC690050497F /* ViewController.swift in Sources */,
 				10D9626F1E65EC690050497F /* AppDelegate.swift in Sources */,
+				10D9628F1E65ED4F0050497F /* InventoryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
