@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate, InventoryController {
     
     override func viewDidLoad() {
-        inventory.createNewCategory("Knick knacks")
-        inventory.createNewCategory("Trinkets")
         categoryPicker.dataSource = self
         categoryPicker.delegate = self
+        print("Target's inventory: \(inventory.inventory)")
     }
     
     var inventory = Inventory()

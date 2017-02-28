@@ -13,7 +13,7 @@
         <!--Root View Controller-->
         <scene sceneID="z3d-jc-Ykp">
             <objects>
-                <tableViewController id="pbr-xT-XsY" sceneMemberID="viewController">
+                <tableViewController id="pbr-xT-XsY" customClass="HomeTableViewController" customModule="InventoryDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Q61-GQ-SD3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +58,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="FAd-Hf-gYj"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="addSegue" id="FAd-Hf-gYj"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="VJh-Uf-NIs" style="IBUITableViewCellStyleDefault" id="Bbs-rp-FrJ">
@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="-678" y="239"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Category View Controller-->
         <scene sceneID="pSl-6A-Teg">
             <objects>
-                <viewController id="wnJ-b4-xQJ" sceneMemberID="viewController">
+                <viewController id="wnJ-b4-xQJ" customClass="AddCategoryViewController" customModule="InventoryDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wPX-ZE-jrx"/>
                         <viewControllerLayoutGuide type="bottom" id="KkR-wc-e6D"/>

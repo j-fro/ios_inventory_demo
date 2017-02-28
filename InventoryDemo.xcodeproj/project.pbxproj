@@ -14,6 +14,9 @@
 		10D962791E65EC690050497F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D962771E65EC690050497F /* LaunchScreen.storyboard */; };
 		10D962841E65EC690050497F /* InventoryDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D962831E65EC690050497F /* InventoryDemoTests.swift */; };
 		10D9628F1E65ED4F0050497F /* InventoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D9628E1E65ED4F0050497F /* InventoryModel.swift */; };
+		10D962991E661D100050497F /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D962981E661D100050497F /* AddCategoryViewController.swift */; };
+		10D9629D1E66239A0050497F /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D9629C1E66239A0050497F /* HomeTableViewController.swift */; };
+		10D9629F1E66245E0050497F /* InventoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D9629E1E66245E0050497F /* InventoryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		10D962831E65EC690050497F /* InventoryDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDemoTests.swift; sourceTree = "<group>"; };
 		10D962851E65EC690050497F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10D9628E1E65ED4F0050497F /* InventoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryModel.swift; sourceTree = "<group>"; };
+		10D962981E661D100050497F /* AddCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
+		10D9629C1E66239A0050497F /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		10D9629E1E66245E0050497F /* InventoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InventoryController.swift; path = ../InventoryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 		10D9626D1E65EC690050497F /* InventoryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				10D9629E1E66245E0050497F /* InventoryController.swift */,
+				10D9629C1E66239A0050497F /* HomeTableViewController.swift */,
+				10D962981E661D100050497F /* AddCategoryViewController.swift */,
 				10D9626E1E65EC690050497F /* AppDelegate.swift */,
 				10D962701E65EC690050497F /* ViewController.swift */,
 				10D962721E65EC690050497F /* Main.storyboard */,
@@ -204,6 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10D9629D1E66239A0050497F /* HomeTableViewController.swift in Sources */,
+				10D9629F1E66245E0050497F /* InventoryController.swift in Sources */,
+				10D962991E661D100050497F /* AddCategoryViewController.swift in Sources */,
 				10D962711E65EC690050497F /* ViewController.swift in Sources */,
 				10D9626F1E65EC690050497F /* AppDelegate.swift in Sources */,
 				10D9628F1E65ED4F0050497F /* InventoryModel.swift in Sources */,
@@ -416,6 +428,7 @@
 				10D9628A1E65EC690050497F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10D9628B1E65EC690050497F /* Build configuration list for PBXNativeTarget "InventoryDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +437,7 @@
 				10D9628D1E65EC690050497F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
