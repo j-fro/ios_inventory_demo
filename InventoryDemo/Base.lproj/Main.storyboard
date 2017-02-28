@@ -172,16 +172,16 @@
                                         </connections>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3hp-Ol-Woq">
-                                        <rect key="frame" x="0.0" y="162" width="343" height="236.5"/>
+                                        <rect key="frame" x="0.0" y="162" width="343" height="237"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mV1-II-YcK">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAY-Nw-QnK">
-                                                <rect key="frame" x="0.0" y="20.5" width="343" height="216"/>
+                                                <rect key="frame" x="0.0" y="21" width="343" height="216"/>
                                             </pickerView>
                                         </subviews>
                                     </stackView>
