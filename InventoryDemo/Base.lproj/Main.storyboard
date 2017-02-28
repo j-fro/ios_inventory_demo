@@ -22,11 +22,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xfR-zM-fBx">
-                                <rect key="frame" x="16" y="28" width="343" height="647"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Uow-Rj-qCl">
+                                <rect key="frame" x="16" y="132" width="320" height="343"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vMt-ce-KxJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vMt-ce-KxJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -34,17 +34,22 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="zbE-OD-7BX"/>
                                         </connections>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mV1-II-YcK">
-                                        <rect key="frame" x="0.0" y="145" width="343" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAY-Nw-QnK">
-                                        <rect key="frame" x="0.0" y="280" width="343" height="216"/>
-                                    </pickerView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEI-UP-OxO">
-                                        <rect key="frame" x="0.0" y="611" width="343" height="36"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3hp-Ol-Woq">
+                                        <rect key="frame" x="0.0" y="50" width="320" height="236.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Item Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mV1-II-YcK">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vAY-Nw-QnK">
+                                                <rect key="frame" x="0.0" y="20.5" width="320" height="216"/>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEI-UP-OxO">
+                                        <rect key="frame" x="0.0" y="306.5" width="320" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Add Item"/>
                                         <connections>
@@ -56,11 +61,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xfR-zM-fBx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2YG-iK-YBm"/>
-                            <constraint firstItem="vAY-Nw-QnK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VBO-dj-62D"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="vAY-Nw-QnK" secondAttribute="leading" id="ald-aV-7xV"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xfR-zM-fBx" secondAttribute="bottom" id="fkC-CP-MxZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="vAY-Nw-QnK" secondAttribute="trailing" id="y1c-y3-VkL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uow-Rj-qCl" secondAttribute="trailing" id="QnA-fJ-kDg"/>
                         </constraints>
                     </view>
                     <connections>
