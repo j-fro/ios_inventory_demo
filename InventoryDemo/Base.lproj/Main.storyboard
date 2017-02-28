@@ -37,6 +37,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="tRV-Jt-BeO" kind="show" id="rwh-Z7-q7Q"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Kii-Pl-MvG" style="IBUITableViewCellStyleDefault" id="xoE-Oh-lcq">
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -74,6 +77,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wnJ-b4-xQJ" kind="show" id="hTW-t8-1pw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -88,6 +94,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DBN-2g-kHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-678" y="239"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pSl-6A-Teg">
+            <objects>
+                <viewController id="wnJ-b4-xQJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wPX-ZE-jrx"/>
+                        <viewControllerLayoutGuide type="bottom" id="KkR-wc-e6D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="krE-9T-gyk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5t-g8-8tn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-679" y="1005"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AnH-UY-aBC">
+            <objects>
+                <viewController id="tRV-Jt-BeO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wvA-Fx-Edk"/>
+                        <viewControllerLayoutGuide type="bottom" id="oK2-ie-OFB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D0C-cm-UMQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6B-tg-wgL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="1004"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JvF-iZ-m9f">
