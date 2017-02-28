@@ -8,23 +8,23 @@
 
 import Foundation
 
+public struct InventoryItem {
+    public var name: String
+    public var category: String
+    public var quantity: Int
+}
+
 class Inventory {
-    public struct InventoryItem {
-        public var name: String
-        public var category: String
-        public var quantity: Int
-    }
+    private var inv = Array<InventoryItem>()
     
-    private var inv = Dictionary<String, InventoryItem>()
-    
-    public var inventory: Dictionary<String, InventoryItem> {
+    public var inventory: Array<InventoryItem> {
         get {
             return inv
         }
     }
     
     public func createNewItem(_ item: InventoryItem) {
-        inv[item.name] = item
+        inv.append(item)
     }
     
     private var catList = Array<String>()

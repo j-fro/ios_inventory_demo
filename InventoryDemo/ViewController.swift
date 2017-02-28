@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     
     override func viewDidLoad() {
         inventory.createNewCategory("Knick knacks")
@@ -20,6 +20,20 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     var inventory = Inventory()
 
     @IBOutlet weak var categoryPicker: UIPickerView!
+    
+    @IBOutlet weak var nameField: UITextField!
+    
+    @IBAction func createNewItem(_ sender: UIButton) {
+        let category = inventory.categories[(categoryPicker?.selectedRow(inComponent: 0))!]
+        let newItem = InventoryItem(name: (nameField?.text)!, category: category, quantity: 0)
+        inventory.createNewItem(newItem)
+        print(inventory.inventory)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,19 +22,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vAY-Nw-QnK">
-                                <rect key="frame" x="0.0" y="225" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xfR-zM-fBx">
+                                <rect key="frame" x="16" y="28" width="343" height="647"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vMt-ce-KxJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="zbE-OD-7BX"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mV1-II-YcK">
+                                        <rect key="frame" x="0.0" y="145" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAY-Nw-QnK">
+                                        <rect key="frame" x="0.0" y="280" width="343" height="216"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEI-UP-OxO">
+                                        <rect key="frame" x="0.0" y="611" width="343" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Add Item"/>
+                                        <connections>
+                                            <action selector="createNewItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lAN-61-L63"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xfR-zM-fBx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2YG-iK-YBm"/>
+                            <constraint firstItem="vAY-Nw-QnK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VBO-dj-62D"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="vAY-Nw-QnK" secondAttribute="leading" id="ald-aV-7xV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xfR-zM-fBx" secondAttribute="bottom" id="fkC-CP-MxZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vAY-Nw-QnK" secondAttribute="trailing" id="y1c-y3-VkL"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="categoryPicker" destination="vAY-Nw-QnK" id="zWm-dq-R1U"/>
+                        <outlet property="nameField" destination="vMt-ce-KxJ" id="lMy-JQ-3Au"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138" y="240"/>
         </scene>
     </scenes>
 </document>
