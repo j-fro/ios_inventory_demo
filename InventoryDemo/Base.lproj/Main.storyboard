@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="z3d-jc-Ykp">
             <objects>
                 <tableViewController id="pbr-xT-XsY" customClass="HomeTableViewController" customModule="InventoryDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,7 +89,7 @@
                             <outlet property="delegate" destination="pbr-xT-XsY" id="Mbd-yp-PYi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="sJO-rM-pIh"/>
+                    <navigationItem key="navigationItem" title="Home" id="sJO-rM-pIh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DBN-2g-kHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
