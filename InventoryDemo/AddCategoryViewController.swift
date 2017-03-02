@@ -26,6 +26,8 @@ class AddCategoryViewController: UIViewController, UITableViewDelegate, Inventor
         }
     }
     
+    @IBOutlet weak var addBtn: UIButton!
+    
     @IBOutlet weak var embeddedView: UIView!
 
     @IBOutlet weak var categoryName: UITextField!
