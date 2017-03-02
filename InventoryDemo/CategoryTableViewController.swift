@@ -24,7 +24,7 @@ class CategoryTableViewController: UITableViewController, InventoryController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
         
-        cell.textLabel?.text = inventory.categories[indexPath.row]
+        cell.textLabel?.text = inventory.categories[indexPath.row].name
 
         return cell
     }

@@ -24,9 +24,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBAction func createNewItem(_ sender: UIButton) {
         let category = inventory.categories[(categoryPicker?.selectedRow(inComponent: 0))!]
-        let newItem = InventoryItem(name: (nameField?.text)!, category: category, quantity: 0)
+        let newItem = (nameField?.text)!
         
-        if !inventory.createNewItem(newItem) {
+//        Send the item to the model to store in the database
+        if !inventory.createNewItem(newItem, category: category) {
             let alert = UIAlertController(title: "Item Not Created", message: "An Item with that name already exists", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
@@ -51,7 +52,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return inventory.categories[row]
+        return inventory.categories[row].name
     }
 }
 

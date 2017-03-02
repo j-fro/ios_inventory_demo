@@ -12,8 +12,6 @@ class HomeTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        inventory.createNewCategory("Knick knacks")
-        inventory.createNewCategory("Trinkets")
         print("Home's inventory: \(inventory.inventory)")
     }
     

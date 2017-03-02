@@ -11,19 +11,19 @@ import UIKit
 class InventoryItemTableViewCell: UITableViewCell {
     
     required init?(coder aDecoder: NSCoder) {
-        item = InventoryItem(name: "", category: "", quantity: 0)
+        item = InventoryItem()
         super.init(coder: aDecoder)
     }
     
     var item: InventoryItem {
         didSet {
             itemName.text = item.name
-            itemCategory.text = item.category
+            itemCategory.text = item.category?.name
             itemQuantity.text = String(item.quantity)
         }
     }
     
-    public func setItem(_ item: InventoryItem) {
+    public func resetItem(_ item: InventoryItem) {
         self.item = item
     }
 

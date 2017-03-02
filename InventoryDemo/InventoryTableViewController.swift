@@ -24,7 +24,7 @@ class InventoryTableViewController: UITableViewController, InventoryController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "InventoryCell", for: indexPath)
         
         if let cell = cell as? InventoryItemTableViewCell {
-            cell.setItem(inventory.inventory[indexPath.row])
+            cell.resetItem(inventory.inventory[indexPath.row])
         }
         
         return cell

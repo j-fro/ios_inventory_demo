@@ -10,6 +10,11 @@
 		10B21EFB1E67ACE20001ABE6 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B21EFA1E67ACE20001ABE6 /* CategoryTableViewController.swift */; };
 		10B21EFD1E686C630001ABE6 /* InventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B21EFC1E686C630001ABE6 /* InventoryTableViewController.swift */; };
 		10B21EFF1E6870410001ABE6 /* InventoryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B21EFE1E6870410001ABE6 /* InventoryItemTableViewCell.swift */; };
+		10B21F021E688B7B0001ABE6 /* InventoryModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10B21F001E688B7B0001ABE6 /* InventoryModel.xcdatamodeld */; };
+		10B21F171E68A1C10001ABE6 /* InventoryCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B21F131E68A1C10001ABE6 /* InventoryCategory+CoreDataClass.swift */; };
+		10B21F181E68A1C10001ABE6 /* InventoryCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B21F141E68A1C10001ABE6 /* InventoryCategory+CoreDataProperties.swift */; };
+		10B21F191E68A1C10001ABE6 /* InventoryItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B21F151E68A1C10001ABE6 /* InventoryItem+CoreDataClass.swift */; };
+		10B21F1A1E68A1C10001ABE6 /* InventoryItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B21F161E68A1C10001ABE6 /* InventoryItem+CoreDataProperties.swift */; };
 		10D9626F1E65EC690050497F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D9626E1E65EC690050497F /* AppDelegate.swift */; };
 		10D962711E65EC690050497F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D962701E65EC690050497F /* ViewController.swift */; };
 		10D962741E65EC690050497F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D962721E65EC690050497F /* Main.storyboard */; };
@@ -36,6 +41,11 @@
 		10B21EFA1E67ACE20001ABE6 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		10B21EFC1E686C630001ABE6 /* InventoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryTableViewController.swift; sourceTree = "<group>"; };
 		10B21EFE1E6870410001ABE6 /* InventoryItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryItemTableViewCell.swift; sourceTree = "<group>"; };
+		10B21F011E688B7B0001ABE6 /* InventoryModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InventoryModel.xcdatamodel; sourceTree = "<group>"; };
+		10B21F131E68A1C10001ABE6 /* InventoryCategory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InventoryCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		10B21F141E68A1C10001ABE6 /* InventoryCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InventoryCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		10B21F151E68A1C10001ABE6 /* InventoryItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InventoryItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		10B21F161E68A1C10001ABE6 /* InventoryItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InventoryItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		10D9626B1E65EC690050497F /* InventoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D9626E1E65EC690050497F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10D962701E65EC690050497F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +83,7 @@
 		10D962621E65EC690050497F = {
 			isa = PBXGroup;
 			children = (
+				10B21F001E688B7B0001ABE6 /* InventoryModel.xcdatamodeld */,
 				10D9626D1E65EC690050497F /* InventoryDemo */,
 				10D962821E65EC690050497F /* InventoryDemoTests */,
 				10D9626C1E65EC690050497F /* Products */,
@@ -91,6 +102,10 @@
 		10D9626D1E65EC690050497F /* InventoryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				10B21F131E68A1C10001ABE6 /* InventoryCategory+CoreDataClass.swift */,
+				10B21F141E68A1C10001ABE6 /* InventoryCategory+CoreDataProperties.swift */,
+				10B21F151E68A1C10001ABE6 /* InventoryItem+CoreDataClass.swift */,
+				10B21F161E68A1C10001ABE6 /* InventoryItem+CoreDataProperties.swift */,
 				10B21EFE1E6870410001ABE6 /* InventoryItemTableViewCell.swift */,
 				10B21EFC1E686C630001ABE6 /* InventoryTableViewController.swift */,
 				10B21EFA1E67ACE20001ABE6 /* CategoryTableViewController.swift */,
@@ -222,8 +237,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B21F181E68A1C10001ABE6 /* InventoryCategory+CoreDataProperties.swift in Sources */,
+				10B21F021E688B7B0001ABE6 /* InventoryModel.xcdatamodeld in Sources */,
 				10B21EFB1E67ACE20001ABE6 /* CategoryTableViewController.swift in Sources */,
+				10B21F191E68A1C10001ABE6 /* InventoryItem+CoreDataClass.swift in Sources */,
 				10D9629D1E66239A0050497F /* HomeTableViewController.swift in Sources */,
+				10B21F1A1E68A1C10001ABE6 /* InventoryItem+CoreDataProperties.swift in Sources */,
+				10B21F171E68A1C10001ABE6 /* InventoryCategory+CoreDataClass.swift in Sources */,
 				10B21EFD1E686C630001ABE6 /* InventoryTableViewController.swift in Sources */,
 				10D9629F1E66245E0050497F /* InventoryController.swift in Sources */,
 				10D962991E661D100050497F /* AddCategoryViewController.swift in Sources */,
@@ -452,6 +472,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		10B21F001E688B7B0001ABE6 /* InventoryModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				10B21F011E688B7B0001ABE6 /* InventoryModel.xcdatamodel */,
+			);
+			currentVersion = 10B21F011E688B7B0001ABE6 /* InventoryModel.xcdatamodel */;
+			path = InventoryModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 10D962631E65EC690050497F /* Project object */;
 }
