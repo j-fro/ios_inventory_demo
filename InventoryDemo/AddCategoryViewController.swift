@@ -31,7 +31,11 @@ class AddCategoryViewController: UIViewController, UITableViewDelegate, Inventor
     
     @IBAction func addNewCategory(_ sender: UIButton) {
         if let name = categoryName?.text {
-            inventory.createNewCategory(name)
+            if !inventory.createNewCategory(name) {
+                let alert = UIAlertController(title: "Category Not Created", message: "This category already exists", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
             embeddedTableController.tableView.reloadData()
         }
     }

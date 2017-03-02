@@ -23,8 +23,12 @@ class Inventory {
         }
     }
     
-    public func createNewItem(_ item: InventoryItem) {
+    public func createNewItem(_ item: InventoryItem) -> Bool {
+        if inv.contains(where: { $0.name == item.name }) {
+           return false
+        }
         inv.append(item)
+        return true
     }
     
     private var catList = Array<String>()
@@ -35,7 +39,11 @@ class Inventory {
         }
     }
     
-    public func createNewCategory(_ category: String) {
+    public func createNewCategory(_ category: String) -> Bool {
+        if catList.contains(category) {
+            return false
+        }
         catList.append(category)
+        return true
     }
 }

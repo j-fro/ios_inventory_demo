@@ -25,8 +25,16 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBAction func createNewItem(_ sender: UIButton) {
         let category = inventory.categories[(categoryPicker?.selectedRow(inComponent: 0))!]
         let newItem = InventoryItem(name: (nameField?.text)!, category: category, quantity: 0)
-        inventory.createNewItem(newItem)
-        print(inventory.inventory)
+        
+        if !inventory.createNewItem(newItem) {
+            let alert = UIAlertController(title: "Item Not Created", message: "An Item with that name already exists", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Success!", message: "Item created successfully", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
