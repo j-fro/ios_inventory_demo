@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10B21EFB1E67ACE20001ABE6 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B21EFA1E67ACE20001ABE6 /* CategoryTableViewController.swift */; };
 		10D9626F1E65EC690050497F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D9626E1E65EC690050497F /* AppDelegate.swift */; };
 		10D962711E65EC690050497F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D962701E65EC690050497F /* ViewController.swift */; };
 		10D962741E65EC690050497F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D962721E65EC690050497F /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10B21EFA1E67ACE20001ABE6 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		10D9626B1E65EC690050497F /* InventoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D9626E1E65EC690050497F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10D962701E65EC690050497F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		10D9626D1E65EC690050497F /* InventoryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				10B21EFA1E67ACE20001ABE6 /* CategoryTableViewController.swift */,
 				10D9629E1E66245E0050497F /* InventoryController.swift */,
 				10D9629C1E66239A0050497F /* HomeTableViewController.swift */,
 				10D962981E661D100050497F /* AddCategoryViewController.swift */,
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B21EFB1E67ACE20001ABE6 /* CategoryTableViewController.swift in Sources */,
 				10D9629D1E66239A0050497F /* HomeTableViewController.swift in Sources */,
 				10D9629F1E66245E0050497F /* InventoryController.swift in Sources */,
 				10D962991E661D100050497F /* AddCategoryViewController.swift in Sources */,

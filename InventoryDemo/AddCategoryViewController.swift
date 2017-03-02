@@ -8,29 +8,31 @@
 
 import UIKit
 
-class AddCategoryViewController: UIViewController, InventoryController {
+class AddCategoryViewController: UIViewController, UITableViewDelegate, InventoryController {
+    
+    var inventory = Inventory()
+    
+    private var embeddedTableController: CategoryTableViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Success")
-        
-        // Do any additional setup after loading the view.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if let destination = segue.destination as? CategoryTableViewController {
+            destination.inventory = inventory
+            embeddedTableController = destination
+        }
     }
     
-    var inventory = Inventory()
+    @IBOutlet weak var embeddedView: UIView!
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var categoryName: UITextField!
+    
+    @IBAction func addNewCategory(_ sender: UIButton) {
+        if let name = categoryName?.text {
+            inventory.createNewCategory(name)
+            embeddedTableController.tableView.reloadData()
+        }
     }
-    */
-
 }
