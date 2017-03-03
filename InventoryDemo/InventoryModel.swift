@@ -61,6 +61,10 @@ class Inventory {
         return false
     }
     
+    public func deleteItem(_ item: InventoryItem) {
+        context?.delete(item)
+    }
+    
     private var catList = Array<InventoryCategory>()
     
     public var categories: Array<InventoryCategory> {
@@ -85,5 +89,9 @@ class Inventory {
             return false
         }
         return false
+    }
+    
+    public func deleteCategory(_ category: InventoryCategory) {
+        context?.delete(category)
     }
 }
